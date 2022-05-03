@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+    <form id="survey-form">
+        <div>
+          <h1 id="title">Survey Form</h1>
+          <p id="description">How was your experience at Learningcodeacademy?</p>
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control-name"
+              placeholder="Enter your name"
+              required>
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control-email"
+              placeholder="Enter your email"
+              required>
+              <label id="number-label" for="number"
+              >Age<span class="opt">(optional)</span></label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="9"
+              max="80"
+              class="form-control-number"
+              placeholder="Age"
+              required>
+              <div class="form-group">
+                <p>How likely are you to reccommend our school?</p>
+                <select id="dropdown" name="role" class="form-control-question" required>
+                  <option disabled selected value>Select option</option>
+                  <option value="Verylikely">Very likely</option>
+                  <option value="Likely">Likely</option>
+                  <option value="PreferNo">Prefer not to say</option>
+                  <option value="Unlikely">Unlikely</option>
+                  <option value="HighlyUnlikely">Highly Unlikely</option>
+                </select>
+                <p>How do you think we can improve overall?</p>
+                  <input type="checkbox" id="1on1" name="1on1" value="1on1">
+                  <label for="1on1">1 on 1 classes</label><br>
+                  <input type="checkbox" id="fundamentals" name="fundamentals" value="fundamentals">
+                  <label for="fundamentals">Computer science fundamentals</label><br>
+                  <input type="checkbox" id="accountMeetings" name="accountMeetings" value="accountMeetings">
+                  <label for="accountMeetings">Accountability meetings</label><br><br>
+                <p>Would you like email updates from our school for future courses?</p>
+                  <input type="radio" id="Yes" name="option" value="Yes">
+                  <label for="option">Yes</label><br>
+                  <input type="radio" id="No" name="option" value="No">
+                  <label for="option">No</label><br>
+                  <input type="radio" id="Reminder" name="option" value="Reminder">
+                  <label for="option">Remind me upon completion of school</label>
+                  <label for="Review">Any additional comments or concerns?!</label>
+                  <textarea id="Review" name="Review"
+                            rows="5" cols="33" placeholder="Enter comment or concerns here...">
+                  
+                  </textarea>
+                  <input id="submit" type="submit" value="Submit">
+        </div>    
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+</body>
+</html>
