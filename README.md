@@ -1,4 +1,6 @@
 # freecodecamp-survey-project
-Hello this is a Freecodecamp assignment I created for porfolio demonstration purposes.
+This project is a survey page.
+
+This is a Freecodecamp assignment I created for porfolio demonstration purposes.
 
 Thanks for watching!
